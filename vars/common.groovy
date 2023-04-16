@@ -8,4 +8,7 @@ def call(String stageName){
   else if("${stageName}" == "Upload to Nexus"){
     sh 'echo "Uploading to nexus"'
   }
+  else if("${stageName}" == "End"){
+    sh 'echo "Deployment Done"'
+  }
 }
